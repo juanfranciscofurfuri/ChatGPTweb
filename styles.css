@@ -1,0 +1,125 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos de la barra de navegación */
+  header {
+    background-color: #241E4E;
+    color: #EADAA2;
+    padding: 10px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: #EADAA2;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: #EADAA2;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    color: #FFD046;
+  }
+  
+  .active {
+    color: #FFD046;
+  }
+  
+  /* Estilos de la sección del héroe */
+  .hero {
+    background-color: #960200;
+    color: #EADAA2;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #FFD046;
+    color: #241E4E;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  .cta-button:hover {
+    background-color: #CE6C47;
+    color: #EADAA2;
+  }
+  
+  /* Estilos de la sección Acerca de mí */
+  .about {
+    background-color: #CE6C47;
+    color: #EADAA2;
+    padding: 40px;
+  }
+  
+  .about h2 {
+    font-size: 24px;
+  }
+  
+  /* Estilos de la sección Mis Proyectos */
+  .projects {
+    background-color: #FFD046;
+    color: #241E4E;
+    padding: 40px;
+  }
+  
+  .projects h2 {
+    font-size: 24px;
+  }
+  
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .project img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* Estilos del pie de página */
+  footer {
+    background-color: #EADAA2;
+    color: #241E4E;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  

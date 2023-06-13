@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Personal</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="logo">Mi Portfolio</a>
+        <ul class="nav-links">
+          <li><a href="#" class="active">Inicio</a></li>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="#">Acerca de mí</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Bienvenido a mi Portfolio</h1>
+        <p>Soy Juan, un apasionado desarrollador web.</p>
+        <a href="#" class="cta-button">Ver mis proyectos</a>
+      </section>
+
+      <section class="about">
+        <h2>Acerca de mí</h2>
+        <p>
+          ¡Hola! Soy [Tu nombre], un desarrollador web con experiencia en
+          creación de sitios web modernos y funcionales. Me especializo en HTML,
+          CSS y JavaScript, y me encanta crear experiencias interactivas para
+          los usuarios. Mi objetivo es ayudar a las empresas y a las personas a
+          tener presencia en línea y lograr sus objetivos digitales. Echa un
+          vistazo a mis proyectos y contáctame si estás interesado en colaborar.
+        </p>
+      </section>
+
+      <section class="projects">
+        <h2>Mis Proyectos</h2>
+        <div class="project">
+          <img
+            src="/imagenes/Opera Snapshot_2023-06-12_215258_chat.openai.com.png"
+            alt="Proyecto 1"
+          />
+          <h3>Proyecto 1</h3>
+          <p>Descripción breve del proyecto 1.</p>
+        </div>
+        <div class="project">
+          <img
+            src="/imagenes/Opera Snapshot_2023-06-12_215335_chat.openai.com.png"
+            alt="Proyecto 2"
+          />
+          <h3>Proyecto 2</h3>
+          <p>Descripción breve del proyecto 2.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h1>Formulario de Contacto</h1>
+      <form id="myForm" onsubmit="validateForm(event)">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <div class="form-group">
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <script>
+        function validateForm(event) {
+          event.preventDefault(); // Evita el envío del formulario por defecto
+
+          var nombre = document.getElementById("nombre").value;
+          var apellido = document.getElementById("apellido").value;
+          var email = document.getElementById("email").value;
+
+          if (nombre === "" || apellido === "" || email === "") {
+            alert("Por favor, complete todos los campos.");
+          } else {
+            // Aquí puedes enviar el formulario o realizar otras acciones
+            alert("Gracias por enviar su formulario.");
+            document.getElementById("myForm").reset(); // Reinicia el formulario
+          }
+        }
+      </script>
+
+      <p>&copy; 2023 Juan Furfuri. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
